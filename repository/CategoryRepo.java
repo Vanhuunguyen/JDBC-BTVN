@@ -5,7 +5,7 @@ import model.Category;
 import java.util.ArrayList;
 import java.util.List;
 
-public interface CategoryRepo<T> {
+public interface CategoryRepo {
         void insert(Category category);
         void update(Category category);
         void delete(int id);
