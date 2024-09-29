@@ -7,12 +7,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 public interface ProductRepo{
-    public void addProductIf(String productName, double price, Category catId);
-    void addProduct(Product product);
-    void updateProduct(Product product);
-    void deleteProduct(int id);
-    List<Product> findProductByName(String name);
-    List<Product> findProductsByCategoryId(int catId);
-    List<Product> sortProductsByPriceDesc(int catId);
-    List<Product> sortProductsByPriceAsc(int catId);
+    public void checkCategory(Category category,Product product);
+    public List<Product> get10Products();
+    public void updateProductById(Product product);
+    public void deleteProductById(int id);
+    public List<Product> sortProductsByPriceDesc(int catId);
+    public List<Product> sortProductAscInCategory(int catId);
+    public List<Product> findProdAndCateByName(String productName, String categoryName);
+
 }
